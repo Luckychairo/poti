@@ -1,5 +1,7 @@
 # Portfolio Website
 
+<img src="img.jpg" alt="Profile Picture" style="float: left; width: 100px; height: 100px; margin: 10px;">
+
 This is my personal portfolio website built using Jekyll and hosted on GitHub Pages.
 
 ## About Me
