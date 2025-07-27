@@ -1,5 +1,5 @@
 Lucky Marange - Portfolio Website
-<!-- Internal Navigation Links -->
+<!-- Corrected Internal Navigation Links -->
 
 About | Interests | Education | Skills | Contact
 
