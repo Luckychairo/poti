@@ -1,158 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucky Marange Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Marange - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <style>
-    .gradient-text {
-      background: linear-gradient(to right, #4f46e5, #9333ea);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    body {
+      display: flex;
+      min-height: 100vh;
+      margin: 0;
     }
-    .card-hover:hover {
-      transform: scale(1.02);
-      transition: transform 0.3s;
+    .sidebar {
+      width: 250px;
+      background-color: #f9fafb;
+      padding: 1rem;
+      border-right: 1px solid #e5e7eb;
     }
-    .animate-fade-in {
-      animation: fadeIn 1s ease-in;
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
     }
-    .animate-slide-in-left {
-      animation: slideInLeft 1s ease-out;
-    }
-    .animate-slide-in-right {
-      animation: slideInRight 1s ease-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideInLeft {
-      from { transform: translateX(-100px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-    @keyframes slideInRight {
-      from { transform: translateX(100px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
+    h2[id] {
+      scroll-margin-top: 80px;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
-  <div class="flex min-h-screen">
-    <!-- Sidebar Navigation -->
-    <nav class="w-64 bg-white p-6 shadow-lg sticky top-0 h-screen">
-      <h1 class="text-2xl font-bold text-indigo-600 mb-6">Lucky Marange</h1>
-      <ul class="space-y-4 text-indigo-800 font-medium">
-        <li><a href="#about" class="hover:text-purple-600">About</a></li>
-        <li><a href="#interests" class="hover:text-purple-600">Interests</a></li>
-        <li><a href="#education" class="hover:text-purple-600">Education</a></li>
-        <li><a href="#skills" class="hover:text-purple-600">Skills</a></li>
-        <li><a href="#contact" class="hover:text-purple-600">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="flex-1 p-8 space-y-12">
-
-      <!-- About Section -->
-      <section id="about" class="animate-fade-in">
-        <h2 class="text-3xl font-bold gradient-text mb-4">About Me</h2>
-        <p class="text-lg text-slate-700 max-w-3xl">I am a passionate educator and future software developer with a strong background in STEM and Information Technology. With over 15 years of teaching experience and ongoing studies in IT, I bring a blend of instructional expertise and technical acumen.</p>
-      </section>
-
-      <!-- Interests Section -->
-      <section id="interests" class="animate-fade-in">
-        <h2 class="text-3xl font-bold gradient-text mb-4">Interests</h2>
-        <p class="text-lg text-slate-700 max-w-3xl">My interests include software development, cybersecurity, educational technology, artificial intelligence, and mentoring learners to excel in technical subjects.</p>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="space-y-10">
-        <h2 class="text-3xl font-bold gradient-text mb-4">Education</h2>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-blue-200 card-hover animate-slide-in-left">
-          <h3 class="text-xl font-semibold gradient-text mb-2">BSc Information Technology (In Progress)</h3>
-          <p class="text-slate-700 font-medium mb-1">North-West University</p>
-          <p class="text-slate-500 text-sm mb-4">January 2023 – Present (Final Year)</p>
-          <ul class="list-disc list-inside space-y-2 text-slate-700">
-            <li>Specializing in Software Development and Cybersecurity.</li>
-            <li>Relevant coursework includes: Database Systems, OOP, Web Dev, Network Security.</li>
-            <li>Engaged in practical projects applying theory to real-world IT challenges.</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-200 card-hover animate-slide-in-right">
-          <h3 class="text-xl font-semibold gradient-text mb-2">BSc Mathematics and Physics</h3>
-          <p class="text-slate-700 font-medium mb-1">University of South Africa (UNISA)</p>
-          <p class="text-slate-500 text-sm mb-4">January 2019 – December 2023</p>
-          <ul class="list-disc list-inside space-y-2 text-slate-700">
-            <li>Studied advanced mathematical concepts and physical principles.</li>
-            <li>Built strong analytical and critical thinking skills.</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-purple-200 card-hover animate-slide-in-right">
-          <h3 class="text-xl font-semibold gradient-text mb-2">Bachelor of Science in Education (B.Sc.Ed)</h3>
-          <p class="text-slate-700 font-medium mb-1">University of South Africa (UNISA)</p>
-          <p class="text-slate-500 text-sm mb-4">January 2014 – December 2017</p>
-          <ul class="list-disc list-inside space-y-2 text-slate-700">
-            <li>Majored in Physical Sciences and Mathematics.</li>
-            <li>Gained strong curriculum design and student engagement skills.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="space-y-10">
-        <h2 class="text-3xl font-bold gradient-text mb-4">Experience</h2>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-200 card-hover animate-fade-in">
-          <h3 class="text-xl font-semibold gradient-text mb-2">Teaching Experience: Charlton Vos College</h3>
-          <p class="text-slate-700 font-medium mb-1">Charlton Vos College</p>
-          <p class="text-slate-500 text-sm mb-4">January 2008 – Present</p>
-          <ul class="list-disc list-inside space-y-2 text-slate-700">
-            <li>Consistent 100% pass rate in Physical Sciences and Mathematics.</li>
-            <li>Developed engaging lesson plans and critical thinking activities.</li>
-            <li>Mentored students and improved academic performance.</li>
-            <li>Utilized EdTech for effective content delivery.</li>
-            <li>Created a positive and inclusive classroom environment.</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-yellow-200 card-hover animate-fade-in">
-          <h3 class="text-xl font-semibold gradient-text mb-2">Software Development Internship (Simulated)</h3>
-          <ul class="list-disc list-inside space-y-2 text-slate-700">
-            <li>Participated in software development lifecycle: from requirements to deployment.</li>
-            <li>Worked with Java, SQL, Git, Agile methodologies.</li>
-            <li>Applied cybersecurity best practices in coding.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="animate-fade-in">
-        <h2 class="text-3xl font-bold gradient-text mb-4">Skills</h2>
-        <ul class="list-disc list-inside space-y-2 text-slate-700">
-          <li>Programming: Java, Python, C++, JavaScript</li>
-          <li>Web Development: HTML, CSS, Tailwind, React</li>
-          <li>Database Systems: SQL, MySQL</li>
-          <li>Cybersecurity Principles</li>
-          <li>Curriculum Design & Instruction</li>
+<body>
+  <div class="sidebar">
+    <div style="display: flex; flex-direction: column; align-items: center; padding-top: 1rem;">
+      <img src="img.jpg" alt="Lucky Marange" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc; margin-bottom: 10px;">
+      <nav style="text-align: left;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
+      </nav>
+    </div>
+  </div>
 
-      <!-- Contact Section -->
-      <section id="contact" class="animate-fade-in">
-        <h2 class="text-3xl font-bold gradient-text mb-4">Contact</h2>
-        <p>Email: <a href="mailto:marangelucky@gmail.com" class="text-indigo-600 hover:underline">marangelucky@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/luckymarange" class="text-indigo-600 hover:underline">linkedin.com/in/luckymarange</a></p>
-      </section>
+  <div class="main-content">
+    <h2 id="about" class="text-2xl font-bold mb-4">About Me</h2>
+    <p class="mb-6">Hi there! I'm Lucky Marange, an aspiring IT Professional and dedicated educator with a passion for problem-solving and continuous learning. Currently pursuing a BSc in Information Technology at North-West University (expected completion 2026), I'm eager to apply my strong analytical skills and foundational knowledge in software engineering, cybersecurity, and web development to innovative projects. My background in STEM education has honed my ability to simplify complex concepts and communicate effectively, making me a valuable asset to any technical team.</p>
 
-      <footer class="mt-16 text-center text-sm text-slate-500">&copy; 2025 Lucky Marange. All rights reserved.</footer>
+    <h2 id="interests" class="text-2xl font-bold mb-4">Interests</h2>
+    <ul class="list-disc list-inside mb-6">
+      <li>Software Engineering</li>
+      <li>Cybersecurity</li>
+      <li>Mathematics & Physics</li>
+      <li>Artificial Intelligence</li>
+      <li>Data Science</li>
+      <li>Web Development</li>
+    </ul>
 
-    </main>
+    <h2 id="education" class="text-2xl font-bold mb-4">Education</h2>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-blue-200 mb-6">
+      <h3 class="text-xl font-semibold gradient-text mb-2">BSc Information Technology (In Progress)</h3>
+      <p class="text-slate-700 font-medium">North-West University</p>
+      <p class="text-slate-500 text-sm mb-4">January 2023 – Present (Final Year)</p>
+      <ul class="list-disc list-inside text-slate-700">
+        <li>Specializing in Software Development and Cybersecurity.</li>
+        <li>Relevant coursework includes: Database Systems, Object-Oriented Programming (Java, C++, C#), Web Development (HTML, CSS, JavaScript), Network Security, Information Systems.</li>
+        <li>Engaged in practical projects applying theoretical knowledge to real-world IT challenges.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-200 mb-6">
+      <h3 class="text-xl font-semibold gradient-text mb-2">BSc Degree in Mathematics and Physics</h3>
+      <p class="text-slate-700 font-medium">University of South Africa (UNISA)</p>
+      <p class="text-slate-500 text-sm mb-4">January 2019 - December 2023</p>
+      <ul class="list-disc list-inside text-slate-700">
+        <li>Comprehensive study of advanced mathematical concepts and physical principles.</li>
+        <li>Developed strong analytical, problem-solving, and critical thinking skills.</li>
+        <li>Prepared for a career in scientific research, data analysis, and technical fields.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-purple-200 mb-6">
+      <h3 class="text-xl font-semibold gradient-text mb-2">Bachelor of Science in Education (B.Sc.Ed)</h3>
+      <p class="text-slate-700 font-medium">University of South Africa (UNISA)</p>
+      <p class="text-slate-500 text-sm mb-4">January 2014 – December 2017</p>
+      <ul class="list-disc list-inside text-slate-700">
+        <li>Majored in Physical Sciences and Mathematics.</li>
+        <li>Developed strong pedagogical skills, including curriculum design, assessment, and student engagement.</li>
+        <li>Gained extensive experience in explaining complex scientific and mathematical concepts clearly and concisely.</li>
+      </ul>
+    </div>
+
+    <h2 id="skills" class="text-2xl font-bold mb-4">Skills</h2>
+    <ul class="list-disc list-inside mb-6">
+      <li>Programming Languages: Java, Python, C++, JavaScript</li>
+      <li>Development Frameworks: Spring, Django, React</li>
+      <li>Database Management: MySQL, MongoDB</li>
+      <li>Operating Systems: Windows, Linux, macOS</li>
+      <li>Core Competencies: Strong understanding of software engineering principles and practices, excellent problem-solving and analytical skills, effective communication, and a collaborative team player.</li>
+    </ul>
+
+    <h2 id="contact" class="text-2xl font-bold mb-4">Contact</h2>
+    <p>Email: <a href="mailto:marangelucky@gmail.com" class="text-blue-600">marangelucky@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/luckymarange" class="text-blue-600">linkedin.com/in/luckymarange</a></p>
+    <p>GitHub: <a href="https://github.com/luckymarange" class="text-blue-600">github.com/luckymarange</a></p>
   </div>
 </body>
 </html>
-
