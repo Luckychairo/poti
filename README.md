@@ -16,8 +16,6 @@
 Lucky Marange - Portfolio Website
 <!-- Internal Navigation Links -->
 
-About | Interests | Education | Skills | Contact
-
 <h2 id="about">About Me</h2>
 
 Hi there! I'm Lucky Marange, an aspiring IT Professional and dedicated educator with a passion for problem-solving and continuous learning. Currently pursuing a BSc in Information Technology at North-West University (expected completion 2026), I'm eager to apply my strong analytical skills and foundational knowledge in software engineering, cybersecurity, and web development to innovative projects. My background in STEM education has honed my ability to simplify complex concepts and communicate effectively, making me a valuable asset to any technical team.
