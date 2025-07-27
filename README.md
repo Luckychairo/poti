@@ -1,19 +1,14 @@
-# Portfolio Website
-
-<div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #f0f0f0; padding: 10px; border-bottom: 1px solid #ccc;">
-  <img src="img.jpg" alt="Profile Picture" style="float: left; width: 100px; height: 100px; margin-right: 20px;">
-  <div style="float: left; margin-top: 40px;">
-    <a href="#about">About</a> | 
-    <a href="#interests">Interests</a> | 
-    <a href="#education">Education</a> | 
-    <a href="#skills">Skills</a> | 
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-
-<div style="margin-top: 150px;">
-
+Lucky Marange - Portfolio Website
 <!-- Internal Navigation Links -->
+
+About | Interests | Education | Skills | Contact
+
+<style>
+/* Fix for fixed header obscuring anchor links /
+h2[id] {
+scroll-margin-top: 80px; / Adjust this value based on your header's height */
+}
+</style>
 
 <h2 id="about">About Me</h2>
 
