@@ -13,7 +13,6 @@
 
 <div style="margin-top: 150px;">
 
-Lucky Marange - Portfolio Website
 <!-- Internal Navigation Links -->
 
 <h2 id="about">About Me</h2>
